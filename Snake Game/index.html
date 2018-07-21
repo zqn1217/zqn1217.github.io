@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>keep going</title>
+    <style>
+        div{
+            width: 800px;
+            height: 600px;
+            background-color: #ccc;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<!--画出地图，设置样式-->
+<div class="map">
+
+</div>
+<script src="js/Food.js"></script>
+<script src="js/Snake.js"></script>
+<script src="js/Game.js"></script>
+
+<script>
+    //初始化游戏对象
+     var play = new Game(document.querySelector(".map"));
+    //初始化游戏，开始游戏
+    play.init();
+</script>
+</body>
+</html>
